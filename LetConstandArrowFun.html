@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            //let const keywords for declaring variables
+            //var - creates global scope varibles - we can redeclare variable 'var'
+            //let - creates block scope variables(anything between {} is called block scope) - we can't redeclare 'let'
+
+            var a;
+            let b;
+            {
+                var x = 100;
+                let y = 200;
+                console.log(y)
+            }
+            console.log(x)
+           // console.log(y) we cant acces y outside curly brackes or outside block scope
+
+           const s = [245,20,30,40];
+           
+           var y = [35];
+           console.log(s) 
+
+         //  abc();
+         //   console.log(chai())
+
+        //    let chai = function abc(){
+        //     console.log('iam first abc')
+        //    }
+
+        //    var chai = function abc(){
+        //     console.log('iam second abc')
+        //    }
+           
+        // const o1 = {
+        //     firstname:'chaitu'
+        // }
+        // o1.firstname = 'chai'
+        // console.log(o1)
+
+
+        var ar = [12,34,45,19,163,54];
+       // print all num in a array
+        // ar.forEach((a)=>{
+        //     console.log(a)
+
+        // })
+
+        // for(i=0;i<=ar.length-1;i++){
+        //     console.log(ar[i])
+        // }
+
+        // var br = ar.map(a=> a*10)
+        // console.log(br)
+
+        var br = ar.filter(a=>a%2==0 ? true : false)
+        console.log(br)
+
+
+        </script>
+    </body>
+</html>

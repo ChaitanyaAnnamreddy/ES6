@@ -1,0 +1,110 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+        //spread operator (...)
+        //In real life ex: To be continued or Read more or inka vundi 
+
+        var ar = [12,23,43];
+        console.log(ar) //(3) [12, 23, 43]
+        console.log(...ar) //12 23 43
+
+        var br = [];
+        br = [...ar];
+        console.log(br) //(3) [12, 23, 43]
+
+        //application
+        var ar = [12,23,43];
+        var br = [10,20,30];
+        var cr;
+
+        cr = [...ar,...br]
+        console.log(cr) //(6) [12, 23, 43, 10, 20, 30]
+
+        ar = [...br,...ar]
+        console.log(ar) //(6) [10, 20, 30, 12, 23, 43]
+
+        //pushing value into array 
+        var ar = [12,23,43];
+        ar.push(40)
+        console.log(ar) // (4) [12, 23, 43, 40]
+
+        //using spread operatior
+        var ar = [12,23,43];
+        var br = 50;
+        ar = [...ar,br]
+        console.log(ar)  // [12, 23, 43, 50]
+
+        //unshift - adding values at the start
+
+        var ar = [12,23,43];
+        var br = 60;
+        ar = [br,...ar]
+        console.log(ar) // (4) [60, 12, 23, 43]
+
+        //freeze
+
+        var ar = [12,23,43];
+
+        Object.freeze(ar);
+
+        // ar.push(100) // Cannot add property 3, object is not extensible
+
+        ar = [...ar,100]
+        console.log(ar) // (4) [12, 23, 43, 100]
+
+        ar.push(100)
+        console.log(ar) //(5) [12, 23, 43, 100, 100] 
+
+        //string
+        var name = ['Java']
+        console.log(...name) //J a v a
+
+        //function
+        var arr1 = [1,2,3,4]
+        function add(a,b,c,d){
+            console.log(a+b+c+d)
+        }
+        add(...arr1) //10
+
+        //objects concat 
+
+        var o1={a:100}
+        var o2={b:200}
+        var o3 = {...o1,...o2}
+        console.log(o3) //{a: 100, b: 200}
+
+         //object freeze
+
+         Object.freeze(o1);
+         o1.c = 444;
+         console.log(o1) // {a: 100} freeze iyindhi kabatti we cant concat another object
+
+         o1 = {...o1,c:230}
+         console.log(o1) // now we can concat {a: 100, c: 230}
+
+        // array concat
+
+        const arr2 = ["Cecilie", "Lone"];
+        const arr3 = ["Emil", "Tobias", "Linus"];
+
+        const children = arr2.concat(arr3); 
+        console.log(children) // ['Cecilie', 'Lone', 'Emil', 'Tobias', 'Linus']
+
+        var arr4 = [...arr2,...arr3]
+        console.log(arr4) //(5) ['Cecilie', 'Lone', 'Emil', 'Tobias', 'Linus']
+
+       
+
+
+
+
+
+
+        
+
+
+
+        </script>
+    </body>
+</html>

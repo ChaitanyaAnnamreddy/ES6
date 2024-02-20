@@ -1,0 +1,115 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+
+
+            /* Destructuring is one of the most popular features of ES6. 
+            The destructuring assignment is an expression that makes it 
+            easy to extract values from arrays, or properties from objects, into distinct variables */
+
+           /* destructuring variable
+
+            var a=10,b=20,c=30,d=40;
+
+            var [a,b,c,d] = [11,22,33,44]
+
+            console.log(a,b,c,d) */
+
+            /* swapping 2 numbers without destructuring
+
+            var a = 139;
+            var b = 200;
+
+            var c = b
+            var b = a 
+            var a = c
+
+            console.log(a,b)  */
+
+            /* swaping 2 num with desturcturing 
+
+            var a = 139;
+            var b = 200;
+
+            [a,b] = [b,a]
+
+            console.log(a,b) */
+
+            //destructuring array
+
+            // var ar = [12,34,54,98];
+
+            //if we want to store each value in seperate variable
+
+           /* var a;
+            a = ar[0];
+            var b;
+            b = ar[1];
+            var c;
+            c = ar[2];
+            var d;
+            d = ar[3];
+            console.log(a)
+            console.log(b)
+            console.log(c)
+            console.log(d) */
+
+            /*instead of doing the above 
+
+            var ar = [12,34,54,98];
+            var[x,y,z,w] = ar;
+            console.log(w) //98
+
+            2nd value kavali ante
+            var ar = [12,34,54,98];
+            var [,w] = ar
+            console.log(w) //34
+
+            3rd value kavali ante
+            var ar = [12,34,54,98];
+            var [,,w] = ar
+            console.log(w) //54 */
+
+            // Objects Destructuring
+
+            
+         /*   var ob1 = {
+                firstname:'chaitu',
+                lastname:'annam',
+                place:'UK',
+                address:{
+                    postcode:'BH51HA',
+                    city:'Bournemouth'
+                }
+            }
+
+            var {firstname,address} = ob1; //destructuring
+
+            console.log(ob1.firstname) //chaitu
+            console.log(firstname) //chaitu
+            console.log(ob1.address.postcode)//BH51HA
+            console.log(address.postcode)//BH51HA
+
+            var {firstname,address:{postcode}} = ob1; //destructuring
+
+            console.log(ob1.firstname) //chaitu
+            console.log(firstname) //chaitu
+            console.log(ob1.address.postcode)//BH51HA
+            console.log(postcode)//BH51HA 
+
+            var {firstname,address:{postcode},lastname:ln} = ob1; //destructuring
+            console.log(ln)
+            console.log(ob1.firstname) //chaitu
+            console.log(firstname) //chaitu
+            console.log(ob1.address.postcode)//BH51HA
+            console.log(postcode)//BH51HA */
+
+
+            
+
+
+
+        </script>
+    </body>
+</html>
